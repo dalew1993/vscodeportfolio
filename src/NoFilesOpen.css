@@ -1,0 +1,43 @@
+.noFilesOpen {
+  padding-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fileLogo {
+  color: #D4D4D4;
+  opacity: 0.3; /* Increased transparency */
+}
+
+.noFilesOpen p {
+  color: #D4D4D4; /* Change to your desired color */
+  opacity: 0.3; /* Increased transparency */
+}
+
+.logoDiv {
+  width: 200px;  
+  height: 200px; 
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-size: cover; 
+  opacity: 0.2; /* Increased transparency */
+  margin-bottom: 20px; 
+}
+
+
+@media (max-width: 600px) {
+  .noFilesOpen {
+    font-size: 20px; /* Adjust the font size for mobile */
+    padding-top: 40px; /* Adjust the top padding for mobile */
+    padding-left: 150px;
+  }
+}

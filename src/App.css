@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  background: #333333;
+  flex: 1; /* To make it occupy the entire available vertical space */
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* To make it occupy the entire available horizontal space when FileColumn is open */
+  overflow: auto; /* If the content overflows */
+}
+
+.secondaryHeader {
+  height: 50px; /* or any value that suits your design */
+  background-color: #1E1E1E; /* temporary, just to see the element */
+}
+
+
+
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

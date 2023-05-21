@@ -1,0 +1,51 @@
+.fileColumn {
+    background: #1E1E1E;
+    color: #D4D4D4;
+    width: 70px;
+    padding: 10px;
+    font-size: 0.70em;
+    border-right: 1px solid #424242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fileColumn h2 {
+    color: #D4D4D4;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  .fileColumn h3 {
+    color: #D4D4D4;
+    padding-left: 0;
+  }
+  
+  .fileColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .fileColumn li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: -10px; /* Adjust the negative margin to move the links more to the left */
+  }
+  
+  .fileColumn li svg {
+    margin-right: 10px;
+    fill: yellow;
+  }
+  
+  .fileColumn li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #D4D4D4;
+  }
+  
+
+  

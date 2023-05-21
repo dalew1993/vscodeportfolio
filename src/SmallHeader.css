@@ -1,0 +1,40 @@
+.secondaryHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+  background-color: rgb(11, 11, 223);
+  color: white;
+  height: 40px;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-size: 14px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.smallheadericon {
+  margin-right: 10px;
+  height:15px;
+  width:15px;
+  color: yellow;
+}
+
+.title {
+  padding-right: 10px; /* Space between text and line */
+}
+
+.line {
+  width: 1px;
+  height: 100%; /* Now line will go full height of the secondaryHeader */
+  background-color: #424242; /* adjust as needed */
+  margin-left: 10px; /* Space between text and line */
+}
+
+@media (max-width: 600px) {
+  .secondaryHeader {
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+  }
+}

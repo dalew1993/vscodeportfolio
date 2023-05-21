@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    background-color: #1E1E1E;
+    color: white;
+    height: 40px;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #424242;; /* adjust color and thickness as desired */
+  }
+  
+
+  .leftSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 28px;
+    width: 28px;
+    margin-right: 20px;
+  }
+  
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+  }
+  
+  .navLinks a {
+    color: #D4D4D4;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .pageTitle {
+    color: #F8F8F8;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Segoe UI", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+  .headerIcons {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust the desired spacing between the icons */
+    margin-left: auto; /* Position the icons to the right */
+  }
+
+  .headerIcons .iconc2 {
+    color: white;
+    padding-top: 2px;
+  }
+  
+  .headerIcons .iconc2:hover {
+    text-decoration: none;
+  }
+
+  .headerIcons .iconm {
+    padding-bottom: 14px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: row;
+      align-items: center;
+      height: 40px; /* Set a fixed height to keep the header consistent */
+    }
+  
+    .navLinks {
+      display: none;
+    }
+  
+    .pageTitle {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  
+    .headerIcons {
+      margin-left: 10px; /* Adjust the margin to position the icons to the right */
+    }
+  }
+  
