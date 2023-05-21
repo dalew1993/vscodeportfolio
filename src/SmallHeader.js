@@ -7,7 +7,7 @@ const pageTitles = {
   '/home': 'Home.js',
   '/projects': 'Projects.js',
   '/about': 'About.js',
-  '/cv': 'CV.js',
+  '/cv': 'Cv.js',
   '/contact': 'Contact.html',
 };
 
