@@ -2,7 +2,7 @@ import React from 'react';
 import './FileColumn.css';
 import { FiChevronRight } from 'react-icons/fi';
 import { SiJavascript } from 'react-icons/si';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const portfolioPages = [
   { path: '/home', name: 'Home.js' },
@@ -13,6 +13,8 @@ const portfolioPages = [
 ];
 
 const FileColumn = () => {
+  const location = useLocation();
+  
   return (
     <div className="fileColumn">
       <h2>Explorer</h2>
@@ -22,7 +24,7 @@ const FileColumn = () => {
         </h3>
         <ul>
           {portfolioPages.map((page, index) => (
-            <li key={index} style={{ paddingLeft: '20px' }}>
+            <li key={index} style={{ paddingLeft: '20px', backgroundColor: location.pathname === page.path ? '#424242' : '#1E1E1E' }}>
               <Link to={page.path}>
                 <SiJavascript className="javascript-icon" /> {page.name}
               </Link>
