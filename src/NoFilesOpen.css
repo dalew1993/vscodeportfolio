@@ -28,9 +28,9 @@
   height: 200px; 
   background-repeat: no-repeat;
   background-position: center;  
-  background-size: cover; 
+  background-size:cover; 
   opacity: 0.2; /* Increased transparency */
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 
