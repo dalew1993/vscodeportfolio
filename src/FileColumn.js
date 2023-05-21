@@ -1,7 +1,7 @@
 import React from 'react';
 import './FileColumn.css';
 import { FiChevronRight } from 'react-icons/fi';
-import { SiJavascript } from 'react-icons/si';
+import { SiJavascript, SiHtml5 } from 'react-icons/si';
 import { Link, useLocation } from 'react-router-dom';
 
 const portfolioPages = [
@@ -9,7 +9,7 @@ const portfolioPages = [
   { path: '/projects', name: 'Projects.js' },
   { path: '/about', name: 'About.js' },
   { path: '/cv', name: 'CV.js' },
-  { path: '/contact', name: 'Contact.js' }
+  { path: '/contact', name: 'Contact.html' }
 ];
 
 const FileColumn = () => {
@@ -26,7 +26,12 @@ const FileColumn = () => {
           {portfolioPages.map((page, index) => (
             <li key={index} style={{ paddingLeft: '20px', backgroundColor: location.pathname === page.path ? '#424242' : '#1E1E1E' }}>
               <Link to={page.path}>
-                <SiJavascript className="javascript-icon" /> {page.name}
+                {page.path === '/contact' ? (
+                  <SiHtml5 className="html-icon" />
+                ) : (
+                  <SiJavascript className="javascript-icon" />
+                )}
+                {page.name}
               </Link>
             </li>
           ))}

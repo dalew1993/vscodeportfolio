@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   padding: 0 20px;
-  background-color: rgb(11, 11, 223);
+  background-color: #1E1E1E;
   color: white;
   height: 40px;
   font-family: Menlo, Monaco, 'Courier New', monospace;
@@ -18,6 +18,15 @@
   height:15px;
   width:15px;
   color: yellow;
+  flex-shrink: 0;
+  
+}
+
+.smallheadericon2 {
+  margin-right: 10px;
+  height:15px;
+  width:15px;
+  color: #E34F26;
   flex-shrink: 0;
   
 }
