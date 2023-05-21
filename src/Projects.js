@@ -3,6 +3,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './Projects.css';
 
+
 const Projects = () => {
   const codeString1 = `
   function PlanPerfect() {
@@ -28,17 +29,20 @@ const Projects = () => {
     background: '#333333',
     padding: '10px',
     borderRadius: '5px',
+    
   };
 
   const linkStyle = {
-    color: '#dcdcaa', // Similar to the color in vscDarkPlus style
+    display: 'flex',
+    alignItems: 'center',
+    color: '#dcdcaa',
     cursor: 'pointer',
     padding: '10px',
     borderRadius: '5px',
-    background: '#333333', // Dark background similar to vscDarkPlus style
-    marginBottom: '10px', // Space between the links
-    fontFamily: 'Courier New', // A commonly used monospace font
-    fontSize: '12px'
+    background: '#333333',
+    marginBottom: '10px',
+    fontFamily: 'Courier New',
+    fontSize: '12px',
   };
 
   const consoleStyle = {

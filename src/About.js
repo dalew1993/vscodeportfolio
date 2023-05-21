@@ -1,7 +1,6 @@
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import './About.js';
 
 const About = () => {
   const aboutString = `
@@ -37,18 +36,31 @@ const About = () => {
     careerAspirations: 'Embarking on a new career path in the coding industry'
   };
 
-  console.log(AboutMe)
+  console.log(AboutMe);
   `;
 
   const customStyle = {
     background: '#333333',
     padding: '10px',
     borderRadius: '5px',
+    maxHeight: '100%', // Set a maximum height
+    overflow: 'auto', // Enable scroll for content overflow
+  };
+
+  const applyMaxHeight = () => {
+    const { innerWidth, innerHeight } = window;
+    if (innerWidth <= 400 && innerHeight <= 700) {
+      return {
+        ...customStyle,
+        maxHeight: '400px',
+      };
+    }
+    return customStyle;
   };
 
   return (
     <div className="about">
-      <SyntaxHighlighter language="javascript" style={vscDarkPlus} customStyle={customStyle}>
+      <SyntaxHighlighter language="javascript" style={vscDarkPlus} customStyle={applyMaxHeight()}>
         {aboutString}
       </SyntaxHighlighter>
     </div>

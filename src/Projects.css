@@ -1,13 +1,11 @@
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 100%;
 }
 
 .project {
     background-color: #333333;
-    padding: 20px;
     border-radius: 5px;
     width: 100%;
 }

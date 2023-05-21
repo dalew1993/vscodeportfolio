@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Minimize, CropSquare, Close } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
   return (
