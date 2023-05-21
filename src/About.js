@@ -37,7 +37,7 @@ const About = () => {
     careerAspirations: 'Embarking on a new career path in the coding industry'
   };
 
-  console.log(AboutMe())
+  console.log(AboutMe)
   `;
 
   const customStyle = {
