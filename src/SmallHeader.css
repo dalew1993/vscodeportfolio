@@ -1,15 +1,11 @@
 .secondaryHeader {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
   background-color: #1E1E1E;
   color: white;
   height: 40px;
   font-family: Menlo, Monaco, 'Courier New', monospace;
   font-size: 14px;
   overflow: hidden;
-  width: 100%;
 }
 
 .smallheadericon {
@@ -31,8 +27,6 @@
 .headerContent {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Adjust as needed */
-  width: 100%;
   padding: 5px 10px; /* Add some padding around the tab content */
   transition: background-color 0.3s ease; /* Add transition for smooth background color change */
 }
@@ -46,18 +40,11 @@
   padding-right: 10px; /* Space between text and line */
 }
 
-.line {
-  width: 1px;
-  height: 100%; /* Now line will go full height of the secondaryHeader */
-  background-color: #424242; /* adjust as needed */
-  margin-left: 10px; /* Space between text and line */
-}
 
 .tab {
   display: flex;
   align-items: center; /* This aligns the content and divider vertically */
   border-right: 1px solid grey; /* Add right border to each tab */
-  height: 100%;
 }
 
 .activeTab {

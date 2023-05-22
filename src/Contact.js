@@ -21,8 +21,7 @@ const Contact = () => {
 
   const customStyle = {
     background: '#333333',
-    padding: '10px',
-    borderRadius: '5px',
+    
   };
 
   return (

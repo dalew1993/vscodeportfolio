@@ -1,27 +1,12 @@
-.App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+
+
 
 .content {
   display: flex;
-  flex-direction: row;
   background: #333333;
-  flex: 1; /* To make it occupy the entire available vertical space */
-}
+  min-height: 100vh;
+  min-width: 100vh;
 
-.contentRight {
-  display: flex;
-  flex-direction: column;
-  flex: 1; /* To make it occupy the entire available horizontal space when FileColumn is open */
-  overflow: auto; /* If the content overflows */
-}
-
-.secondaryHeader {
-  height: 50px; /* or any value that suits your design */
-  background-color: #1E1E1E; /* temporary, just to see the element */
 }
 
 

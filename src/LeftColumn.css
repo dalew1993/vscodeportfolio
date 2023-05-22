@@ -1,15 +1,9 @@
 .leftColumn {
-    width: 60px;
     background-color: #1E1E1E;
     color: white;
-    height: calc(100vh - 40px);
-    position: sticky;
-    top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 10px;
+
     border-right: 1px solid #424242;
 }
 
@@ -17,8 +11,5 @@
     font-size: 32px;
     margin-bottom: 25px;
     color: #BBBBBB;
-}
-
-.other-icons {
-    margin-top: 25px; /* Adjust this to create space */
+    margin-top: 20px; /* Adjust this to create space */
 }
