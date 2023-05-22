@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './LeftColumn.css';
 import { FiFile } from 'react-icons/fi';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
-import './LeftColumn.css';
 
-const LeftColumn = ({ toggleFileColumn }) => {
+const LeftColumn = ({ isFileColumnOpen, toggleFileColumn }) => {
   const handleGithubClick = () => {
     // Replace this URL with your GitHub profile URL
     const githubUrl = 'https://github.com/your-github-profile';
@@ -28,7 +28,7 @@ const LeftColumn = ({ toggleFileColumn }) => {
 
   return (
     <div className="leftColumn">
-      <FiFile className="icon" onClick={toggleFileColumn} />
+      <FiFile className={`icon ${isFileColumnOpen ? 'active' : ''}`} onClick={toggleFileColumn} />
       <AiFillGithub className="icon" onClick={handleGithubClick} />
       <AiFillLinkedin className="icon" onClick={handleLinkedInClick} />
       <MdEmail className="icon" onClick={handleEmailClick} />
